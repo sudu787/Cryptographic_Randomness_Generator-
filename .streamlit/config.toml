@@ -1,0 +1,29 @@
+# EntropyLens dashboard configuration. Run from the repository root:
+#   streamlit run entropylens/dashboard/app.py
+
+[server]
+# Bind to the local machine only. The dashboard has no authentication (threat model T13).
+address = "localhost"
+port = 8501
+headless = true
+enableXsrfProtection = true
+# The dashboard accepts no uploads.
+maxUploadSize = 1
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#3987e5"
+backgroundColor = "#0d0d0d"
+secondaryBackgroundColor = "#1a1a19"
+textColor = "#f0efec"
+borderColor = "#2c2c2a"
+font = "sans-serif"
+# Categorical slots 1-8 of the reference data-viz palette, dark-mode steps, in fixed order.
+chartCategoricalColors = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"]

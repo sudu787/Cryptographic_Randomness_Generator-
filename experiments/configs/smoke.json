@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "smoke",
+  "purpose": "development",
+  "master_seed": 12345,
+  "description": "Development smoke run of the detection harness with the default trial design. Not evaluation data.",
+  "cells": [
+    {"name": "s0-healthy", "model": "S0", "trials": 5},
+    {"name": "s0-f1-constant", "model": "S0", "fault": {"fault": "F1"}, "trials": 5},
+    {"name": "s0-f3-bias", "model": "S0", "fault": {"fault": "F3"}, "trials": 5},
+    {"name": "s0-f4-pattern", "model": "S0", "fault": {"fault": "F4"}, "trials": 5},
+    {"name": "s0-n1-negative-control", "model": "S0", "fault": {"fault": "N1"}, "trials": 5}
+  ]
+}

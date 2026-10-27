@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "smoke-placement",
+  "purpose": "development",
+  "master_seed": 12345,
+  "description": "Development smoke run of the E3 placement comparison (P1, P2, P3). Not evaluation data.",
+  "analysis": "placement",
+  "cells": [
+    {"name": "s0-healthy", "model": "S0", "trials": 3},
+    {"name": "s0-f1-constant", "model": "S0", "fault": {"fault": "F1"}, "trials": 3},
+    {"name": "s0-f3-bias", "model": "S0", "fault": {"fault": "F3"}, "trials": 3}
+  ]
+}

@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python build and cache artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tool caches and coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Generated experiment results (evaluation results are added deliberately in Phase 7)
+experiments/results/
+
+# Local tool configuration (machine-specific paths)
+.claude/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
